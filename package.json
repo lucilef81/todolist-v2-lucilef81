@@ -51,6 +51,7 @@
     "react-dom": "*",
     "react-router-dom": "^5.1.2",
     "styled-components": "^5.0.1",
-    "styled-config": "^4.0.0"
+    "styled-config": "^4.0.0",
+    "uuid": "^3.4.0"
   }
 }

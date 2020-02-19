@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import uuid from 'uuid';
 import AddTaskFormStyled from './AddTaskFormStyled';
 import Field from '../Field';
 
@@ -15,7 +16,7 @@ const AddTaskForm = ({ tasks, setTasks }) => {
     setTasks([
       ...tasks,
       {
-        id: 4,
+        id: uuid(),
         label: value,
         done: false,
       },

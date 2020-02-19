@@ -1,6 +1,6 @@
 module.exports = {
-  primary: '#22a6b3',
-  primaryHover: '#7ed6df',
+  primary: '#e17055',
+  primaryHover: '#fab1a0',
   secondary: '#fdcb6e',
   secondaryHover: '#ffeaa7',
   link: '#6c5ce7',

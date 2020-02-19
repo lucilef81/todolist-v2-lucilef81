@@ -7,6 +7,7 @@ const Titletyled = styled.div`
     padding: 1rem;
     border-bottom: 1px solid ${config.primary};
     text-align: left;
+    color: ${config.primary};
   }
 `;
 

@@ -3,27 +3,29 @@ import config from '../../StyledConfig';
 
 const AddTaskFormStyled = styled.div`
   .add-task {
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
 
     input {
-      width: 500px;
-      padding: 0.5rem;
+      width: 200px;
+      padding: 0.75rem 1rem;
       border: 1px solid ${config.primary};
       border-radius: 10px;
-      margin-bottom: 1rem;
-      margin-right: 1rem;
       color: ${config.primary};
+      font-size: 1rem;
     }
 
     .btn {
       color: ${config.primary};
-      padding: 0.8rem;
+      padding: 0 1rem;
+      margin-left: 1rem;
       border-radius: 10px;
       transition: all 300ms;
       font-weight: bold;
 
       &:hover {
-        background-color: ${config.primary};
+        background-color: ${config.primaryHover};
         color: #fff;
       }
     }

@@ -6,6 +6,7 @@ import './styles.css';
 import Tasks from '../Tasks';
 import Title from '../Title';
 import AddTaskForm from '../AddTaskForm';
+import AppStyled from './AppStyled';
 
 // == Composant
 const App = () => {
@@ -14,15 +15,17 @@ const App = () => {
   const remainingCount = tasks.filter((t) => !t.done).length;
 
   return (
-    <div className="app">
-      <AddTaskForm tasks={tasks} setTasks={setTasks} />
-      <Title
-        title={`${remainingCount} task${
-          remainingCount !== 1 ? 's' : ''
-        } remaining.`}
-      />
-      <Tasks tasks={tasks} setTasks={setTasks} />
-    </div>
+    <AppStyled>
+      <div className="app">
+        <AddTaskForm tasks={tasks} setTasks={setTasks} />
+        <Title
+          title={`${remainingCount} task${
+            remainingCount !== 1 ? 's' : ''
+          } remaining.`}
+        />
+        <Tasks tasks={tasks} setTasks={setTasks} />
+      </div>
+    </AppStyled>
   );
 };
 

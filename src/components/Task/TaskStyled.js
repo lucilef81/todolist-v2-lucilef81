@@ -5,9 +5,23 @@ const TaskStyled = styled.div`
   .task {
     border: 1px solid ${config.primary};
     border-radius: 10px;
-    padding: 1rem;
-    margin: 1rem;
+    margin-top: 1.5rem;
     transition: all 300ms;
+
+    &.done {
+      opacity: 0.6;
+      text-decoration: line-through;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      width: 100%;
+      display: block;
+      padding: 1rem;
+    }
 
     &:hover {
       transition: all 300ms;

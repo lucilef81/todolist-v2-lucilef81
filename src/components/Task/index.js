@@ -5,7 +5,7 @@ import TaskStyled from '../Task/TaskStyled';
 const Task = ({ task, handleChange }) => {
   return (
     <TaskStyled>
-      <div className="task">
+      <div className={`task ${task.done ? 'done' : ''}`}>
         <Field
           type="checkbox"
           name={`task-${task.id}`}

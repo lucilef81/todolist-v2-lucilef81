@@ -3,10 +3,10 @@ import config from '../../StyledConfig';
 
 const TasksStyled = styled.div`
   .tasks {
-    text-align: center;
+    text-align: left;
     display: grid;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+
     color: ${config.primary};
   }
 `;
