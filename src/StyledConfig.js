@@ -1,0 +1,16 @@
+module.exports = {
+  primary: '#22a6b3',
+  primaryHover: '#7ed6df',
+  secondary: '#fdcb6e',
+  secondaryHover: '#ffeaa7',
+  link: '#6c5ce7',
+  success: '#55efc4',
+  successHover: '#00b894',
+  danger: '#ff7675',
+  dangerHover: '#d63031',
+  dark: '#2d3436',
+  grey: '#b2bec3',
+  light: '#dfe6e9',
+  size: '1rem',
+  sizeLarge: '2rem',
+};
