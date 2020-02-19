@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import uuid from 'uuid';
 import AddTaskFormStyled from './AddTaskFormStyled';
 import Field from '../Field';
@@ -32,12 +33,14 @@ const AddTaskForm = ({ tasks, setTasks }) => {
           value={value}
           handleChange={handleChange}
         />
-        <button className="btn" type="submit">
-          Submit
-        </button>
       </form>
     </AddTaskFormStyled>
   );
+};
+
+AddTaskForm.propTypes = {
+  tasks: PropTypes.array.isRequired,
+  setTasks: PropTypes.func.isRequired,
 };
 
 export default AddTaskForm;

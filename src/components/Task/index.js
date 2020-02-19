@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Field from '../Field';
-import TaskStyled from '../Task/TaskStyled';
+import TaskStyled from './TaskStyled';
 
 const Task = ({ task, handleChange }) => {
   return (
@@ -16,6 +18,15 @@ const Task = ({ task, handleChange }) => {
       </div>
     </TaskStyled>
   );
+};
+
+Task.propTypes = {
+  task: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    label: PropTypes.string.isRequired,
+    done: PropTypes.bool.isRequired,
+  }).isRequired,
+  handleChange: PropTypes.func.isRequired,
 };
 
 export default Task;
