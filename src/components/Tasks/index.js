@@ -16,7 +16,7 @@ const Tasks = ({ tasks, setTasks }) => {
     );
   };
 
-  const sortedTasks = tasks.sort((a, b) => a.done - b.done);
+  const sortedTasks = [...tasks].sort((a, b) => a.done - b.done);
 
   return (
     <TasksStyled>
